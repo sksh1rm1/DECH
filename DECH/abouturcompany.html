@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="DECH">
+    <meta name="keywords" content="Distributed Energy Clearinghouse">
+    <meta name="author" content="Distributed Energy Clearinghouse">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./images/fnol.png" type="image/x-icon">
+    <title>Distributed Energy Clearinghouse</title>
+
+
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+        <!-- Container wrapper -->
+        <div class="container-fluid mx-3">
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Navbar brand -->
+                <a class="navbar-brand mt-2 mt-lg-0" href="#">
+                    <img src="./images/logo.png" height="45" alt="DECH Logo" loading="lazy" />
+                </a>
+
+            </div>
+            <!-- Collapsible wrapper -->
+
+            <!-- Right elements -->
+            <div class="dropdown pb-4 me-3">
+                <a href="#" class="d-flex align-items-center fw-3 text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="./images/Ellipse 2.png" alt="ellipse.png" height="45" class="rounded-circle border border-success p-1 me-3">
+                    <span class="d-none d-sm-inline mx-1 text-dark fw-bold">John Doe</span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                    <li><a class="dropdown-item" href="#">New project...</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Sign out</a></li>
+                </ul>
+            </div>
+            <!-- Right elements -->
+        </div>
+        <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+    <!-- sidebar -->
+    <div class="container-fluid">
+        <div class="row flex-column mx-3">
+
+            <div class="col-12 col-sm-12 col-md-3 sidebar">
+                <div class="card">
+                    <div class="card-body m-5">
+
+                        <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                            <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                                <span class="fs-5 d-none d-sm-inline">Menu</span>
+                            </a>
+                            <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link align-middle px-0 active">
+                                        <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline ">About
+                                            Company</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                        <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">About
+                                            Yourself</span>
+                                    </a>
+
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link px-0 align-middle">
+                                        <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Choose
+                                            Product</span></a>
+                                </li>
+                                <li>
+                                    <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                                        <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline">About
+                                            Client</span></a>
+
+                                </li>
+                                <li>
+                                    <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                        <i class="fs-4 bi-grid"></i> <span class="ms-1 d-none d-sm-inline">Site
+                                            Evaluation</span> </a>
+
+                                </li>
+
+                            </ul>
+                            <hr>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-9 scollbar-success   ">
+
+
+                <form action="about-company">
+                    <h2 class=" mb-5 text-dark flex-wrap fw-bold">Tell us about your company</h2>
+                    <h5 class="fw-normal mb-5">Company and Contact Details</h5>
+
+                    <div class="form-sm-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="Company (Broker) Name">
+                        <label for="floatingInput"></label>
+                    </div>
+                    <div class=" d-flex">
+
+                        <div class="col-6">
+                            <div class="form-sm-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="Address Line1">
+                                <label for="floatingInput"></label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-sm-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="Address Line2">
+                                <label for="floatingInput"></label>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="d-flex">
+
+                        <div class="col-3">
+                            <div class="form-sm-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="City">
+                                <label for="floatingInput"></label>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="form-sm-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="State">
+                                <label for="floatingInput"></label>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="form-sm-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="Zip Code">
+                                <label for="floatingInput"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+
+                        <div class="col-3 ">
+                            <div class="form-sm-floating ">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="Contact Name">
+                                <label for="floatingInput"></label>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="form-sm-floating ">
+                                <input type="phonenumber" class="form-control" id="floatingInput" placeholder="Contact Phone Number">
+                                <label for="floatingInput"></label>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="form-sm-floating ">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="Contact Email Address">
+                                <label for="floatingInput"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="col-3 mt-3">
+                            <div class=" my-md-2 my-2">
+                                <label for="floatingInput" class="fw-bold">Type of Broker<br>
+                                    Clients</label>
+                                <select id="sub" required>
+                                    <option value="" selected hidden>Choose Option</option>
+                                    <option value="Maths">Action</option>
+                                    <option value="Science">Another Action</option>
+                                    <option value="Social">Something else</option>
+                                    <option value="Hindi">Seperated link</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-3 mt-3">
+                            <div class=" my-md-2 my-2">
+                                <label for="floatingInput" class="fw-bold">Spend of Candidate
+                                    Clients</label>
+                                <select id="sub" required>
+                                    <option value="" selected hidden>Choose Option</option>
+                                    <option value="Maths">Action</option>
+                                    <option value="Science">Another Action</option>
+                                    <option value="Social">Something else</option>
+                                    <option value="Hindi">Seperated link</option>
+                                </select>
+                            </div>
+
+                        </div>
+                        <div class="col-3 mt-3">
+                            <div class=" my-md-2 my-2">
+                                <label for="floatingInput" class="fw-bold">How big are DERs to your
+                                    clients ?</label>
+                                <select id="sub" required>
+                                    <option value="" selected hidden>Choose Option</option>
+                                    <option value="Maths">Action</option>
+                                    <option value="Science">Another Action</option>
+                                    <option value="Social">Something else</option>
+                                    <option value="Hindi">Seperated link</option>
+                                </select>
+                            </div>
+
+                        </div>
+                        <div class="col-3 mt-3">
+                            <div class=" my-md-2 my-2">
+                                <label for="floatingInput" class="fw-bold">How big are DERs to your
+                                    business ?</label>
+                                <select id="sub" required>
+                                    <option value="" selected hidden>Choose Option</option>
+                                    <option value="Maths">Action</option>
+                                    <option value="Science">Another Action</option>
+                                    <option value="Social">Something else</option>
+                                    <option value="Hindi">Seperated link</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="d-flex">
+                        <div class="col-3 mt-3">
+                            <div class=" my-md-2 my-2">
+                                <label for="floatingInput" class="fw-bold m-1">How many clients with
+                                    DER
+                                    candidates
+                                    ?</label>
+                                <select id="sub" required>
+                                    <option value="" selected hidden>Choose Option</option>
+                                    <option value="Maths">Action</option>
+                                    <option value="Science">Another Action</option>
+                                    <option value="Social">Something else</option>
+                                    <option value="Hindi">Seperated link</option>
+                                </select>
+                            </div>
+
+                        </div>
+                        <div class="col-3 mt-3">
+                            <div class=" my-md-2 my-2">
+                                <label for="floatingInput" class="fw-bold m-1">How many candidate
+                                    sites
+                                    per
+                                    year ?</label>
+                                <select id="sub" required>
+                                    <option value="" selected hidden>Choose Option</option>
+                                    <option value="Maths">Action</option>
+                                    <option value="Science">Another Action</option>
+                                    <option value="Social">Something else</option>
+                                    <option value="Hindi">Seperated link</option>
+                                </select>
+                            </div>
+
+                        </div>
+                        <div class="col-3 mt-3">
+                            <div class=" my-md-2 my-2">
+                                <label for="floatingInput" class="fw-bold m-1">What are key drivers
+                                    for
+                                    your
+                                    clients
+                                    ?</label>
+                                <select id="sub" required>
+                                    <option value="" selected hidden>Choose Option</option>
+                                    <option value="Maths">Action</option>
+                                    <option value="Science">Another Action</option>
+                                    <option value="Social">Something else</option>
+                                    <option value="Hindi">Seperated link</option>
+                                </select>
+                            </div>
+
+                        </div>
+                        <div class="col-3 mt-3">
+                            <div class=" my-md-2 my-2">
+                                <label for="floatingInput" class="fw-bold m-1">How is company
+                                    compensated
+                                    for ?</label>
+                                <select id="sub" required>
+                                    <option value="" selected hidden>Choose Option</option>
+                                    <option value="Maths">Action</option>
+                                    <option value="Science">Another Action</option>
+                                    <option value="Social">Something else</option>
+                                    <option value="Hindi">Seperated link</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="d-flex">
+                        <div class="col-3 mt-3">
+                            <div class=" my-md-2 my-2">
+                                <label for="floatingInput" class="fw-bold">Do you have minimum comp
+                                    per
+                                    DER ?</label>
+                                <select id="sub" required>
+                                    <option value="" selected hidden>Choose Option</option>
+                                    <option value="Maths">Action</option>
+                                    <option value="Science">Another Action</option>
+                                    <option value="Social">Something else</option>
+                                    <option value="Hindi">Seperated link</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="d-flex">
+                        <div class="heading mt-3">
+                            <h6>Prime Markets of Interest (Select all that apply)</h6>
+                        </div>
+                        <div class="col-2">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    CAISO
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    ERCOT
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    ISONE
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    MISO
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    NYISO
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    PJM
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    SPP
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="heading mt-3">
+                            <h6>Type of DER to focus on (Select all that apply)</h6>
+                        </div>
+                        <div class="col-2">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Reliability,fossil
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Reliability, Battery
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Solar
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Battery
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Combination
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Wind
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Renewables
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="heading mt-3">
+                            <h6>Type of DER to focus on (Select all that apply)</h6>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Create new business line ?
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Expand existing DER business ?
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Need to respond to client questions
+                                </label>
+                            </div>
+                        </div>
+
+
+                        <div class="progress mt-5" style="height:3px;">
+                            <div class=" progress-bar bg-success" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%;"></div>
+                        </div>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-3  ">
+                            <a href="./aboutyourself.html" class="btn btn-success active fw-bold" role="button">Next</a>
+
+
+                        </div>
+                    </div>
+                </form>
+
+
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+
+    </div>
+    <!-- sidebar -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
